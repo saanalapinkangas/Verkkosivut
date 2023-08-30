@@ -1,0 +1,800 @@
+@charset "UTF-8";
+/* Body */
+body {
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+	color: #515151;
+    background-color: #f1f1f1;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    font-style: normal;
+}
+
+a {
+  color: #9DAB86;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #515151;
+}
+/* Container */
+.container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* Navigation */
+header {
+	width: 100%;
+	height: 150px;
+	background-color: #CC7351;
+	border-bottom: 0px solid #2C9AB7;
+}
+.logo {
+	width: 30%;
+	float: left;
+	margin-top: 2%;
+	margin-left: 4%;
+}
+/*navigaatio*/
+.overlay{
+    position: fixed;
+    top: 0;
+    right: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#main-menu {
+	padding-top: 110px;
+  display: block;
+	float:right;
+  width: 60%;
+  background: #CC7351;  
+  z-index: 9;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: lighter;
+    transition: all 0.3s linear;
+	text-transform: uppercase;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+#main-menu ul {
+  max-width: 800px;
+  width: 80%;
+  height: 100%;
+  margin: 0px auto;
+  padding: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 9;
+}
+
+#main-menu li {
+  list-style-type: none;
+}
+
+#main-menu a {
+	color: #ffffff;
+  text-decoration: none;
+}
+
+#main-menu a:hover {
+  color: #DED7B1;;
+}
+
+#hamburger-input{
+  display: none;
+}
+
+#hamburger-menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    display: none;
+    padding: 0px;
+    margin: 0px;
+	border-radius: 10px;
+	background: linear-gradient(
+      to bottom, 
+      #ffffff, #ffffff 20%, 
+      #CC7351 20%, #CC7351 40%, 
+      #ffffff 20%, #ffffff 60%, 
+      #CC7351 60%, #CC7351 80%, 
+      #ffffff 80%, #ffffff 100%
+    );
+}
+
+#hamburger-menu #sidebar-menu {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    box-sizing: border-box;
+	background-color: #5F7161;
+	opacity: 0.9;
+}
+
+#hamburger-menu h3 {
+	text-align: right;
+	font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: bolder;
+	text-transform: uppercase;
+	padding-right: 5%;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	color: #ffffff;
+}
+
+#hamburger-menu ul {
+	padding-right: 5%;
+	float: right;
+	text-align:right;
+	font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: normal;
+    transition: all 0.3s linear;
+	text-transform: uppercase;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+}
+
+#hamburger-menu li {
+  list-style-type: none;
+  line-height: 3rem;
+}
+
+#hamburger-menu a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#hamburger-menu a:hover {
+	color: #DED7B1;
+}
+
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+    visibility: visible;
+    right: 0;
+}
+#hamburger-input:checked ~ .overlay{
+   visibility: visible;
+  opacity: 0.1;
+}
+/*navigaatio loppuu*/
+
+.hero_header {
+	color: #FFFFFF;
+	text-align: center;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	letter-spacing: 4px;
+}
+/* Hero Section */
+.hero {
+    background-image: url("https://static.wixstatic.com/media/42c545_999303f913aa4eb38d15bbfe42ead63e~mv2.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: local;
+    padding-top: 50px;
+    padding-bottom: 40px;
+	height: 300px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+	width: 500px;
+}
+.tagline {
+	text-align: center;
+	color: #FFFFFF;
+	margin-top: 4px;
+	font-weight: lighter;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+/* Esittely */
+.text_column {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans serif;
+    font-size: 14px;
+	color: #515151;
+	width: 70%;
+	text-align: justify;
+	font-weight: normal;
+	line-height: 25px;
+	float: left;
+	padding-left: 15%;
+	padding-right: 15%;
+}
+.about {
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 0px;
+	display: inline-block;
+	margin-top: 0px;
+}
+.about h2 {
+  font-style: italic;
+  color: #CC7351;
+  text-align:center;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-size: 20px;
+	font-weight: lighter;
+	letter-spacing: 1px;
+}
+/*Columns*/
+.row {
+	width: 90%;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+  padding-left: 10%;
+	/*display: inline-block;*/
+  display: flex;
+	flex-wrap: wrap;
+	/*background-color: #DED7B1;*/
+}
+.column_half {
+	width: 40%;
+	float: left;
+	margin-top: 0px;
+}
+.columns {
+	width: 30%;
+	float: left;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+	line-height: 24px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: justify;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	display:block;
+}
+/*HENKILÖKUNNAN SUOSIKIT*/
+.product_carousel {
+	width: auto;
+  max-width:20%;
+	float: left;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+	color: #3b3b3b;
+	font-weight: normal;
+	text-transform: uppercase;
+	line-height: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: 15px;
+	margin-right: 0px;
+}
+
+.product_carousel_h2 {
+	font-size: 13px;
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	text-align: center;
+	font-weight: normal;
+	line-height: 5px;
+	padding-top: 10px;
+	padding-bottom: 0px;
+}
+
+.product_carousel_h1 {
+	font-size: 22px;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	text-align: center;
+	font-weight: lighter;
+	color: #CC7351;
+	text-transform: uppercase;
+	margin-top: 40px;
+}
+.row .columns p {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.container .columns h4 {
+	text-align: center;
+	color: #9DAB86;
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+.thumbnail {
+	width: 100%;
+	margin-left: auto;
+}
+.thumbnail_align {
+	text-align: center;
+}
+/*Kuvan reunojen pyöristys hoverissa*/
+.hover_rounded img {
+  text-align:center;
+  transition: 0.5s ease;
+}
+.hover_rounded img:hover {
+border-radius:20%;
+transition: 0.5s ease;
+}
+/*Kuvan zoomaus hoverissa*/
+.img_zoom {
+  height: auto;
+  overflow: hidden;
+  text-align:center;
+}
+.img_zoom img {
+  transition: transform .5s ease;
+}
+.img_zoom:hover img {
+  transform: scale(1.5);
+}
+/* Asiakaspalautteet etusivulla */
+.feedback_h1 {
+	color: #FCF8E8;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	/*font-style: italic;*/
+	font-size: 20px;
+	font-weight: lighter;
+	text-align:center;
+	letter-spacing: 1px;
+	margin-bottom: 5px;
+}
+.gallery {
+	clear: both;
+	display: inline-block;
+	width: 100%;
+	background-color: #9DAB86;
+	padding-bottom: 35px;
+	padding-top: 25px;
+	margin-bottom: 0px;
+	margin-top: 30px;
+}
+.feedback_p {
+	color: #363434;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 12px;
+	text-align:center;
+}
+.thumbnail_0 {
+	width: 100%;
+	text-align: center;
+	float: left;
+	margin-top: 10px;
+	margin-bottom: -40px;
+}
+.thumbnail_2 {
+	width: 30%;
+	float: left;
+	padding-left: 15%;
+}
+/*Yleinen kuvan reunojen pyöristys*/
+.thumbnail_rounded {
+	border-radius: 50px;
+	width: 100%;
+}
+/* Blogi etusivulla*/
+.blogi {
+	display: inline-block;
+	width: 100%;
+	background-color: #EAE0DA;
+	padding-bottom: 35px;
+	padding-top: 35px;
+	margin-bottom: 0px;
+}
+.blogi_left {
+	width: 30%;
+	float: left;
+	text-align:center;
+	padding-left: 150px;
+}
+.blogi_right {
+  height: 200px;
+	float: right;
+	text-align: justify;
+	font-weight: lighter;
+	font-style: italic;
+	padding-right: 150px;
+	padding-left: 60px;
+	width: 40%;
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  overflow:hidden;
+}
+.blogi_right h4 {
+	font-weight: normal;
+	text-transform: uppercase;
+	font-style: normal;
+}
+/*Nappi*/
+.button_small {
+	width: 100px;
+	float:right;
+	margin-top: 20px;
+	margin-right: 150px;
+	margin-bottom: auto;
+	margin-left: auto;
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 0px;
+	text-transform: uppercase;
+	font-style: normal;
+	letter-spacing: 1px;
+	border: 1px solid #CC7351;
+	color: #CC7351;
+	transition: all 0.3s linear;
+}
+.button_small:hover {
+	background-color: #CC7351;
+	color: #EAE0DA;
+	cursor: pointer;
+}
+
+/* Alapalkki */
+footer {
+	background-color: #5F7161;
+	padding-bottom: 20px;
+	padding-top: 20px;
+  margin-top:-10px;
+  margin-bottom:-10px;
+	width: 100%;
+}
+
+footer a {
+  color: #DED7B1;
+  text-decoration: none;
+}
+.footer_column {
+    width: 12%;
+	padding-left: 150px;
+    float: left;
+}
+.footer_column_1 {
+    width: 12%;
+	padding-left: 60px;
+    float: left;
+}
+.footer_column_2 {
+    width: 25%;
+	padding-right: 170px;
+    float: right;
+	text-align: right;
+}
+.footer_column_3 {
+    width: 100%;
+	text-align: center;
+	float: none;
+}
+footer .footer_column h3 {
+	color: #B3B3B3;
+	text-align: center;
+}
+footer p {
+	color: #f3f3f3;
+	line-height: 20px;
+	font-weight: normal;
+	font-size: 12px;
+	text-transform: uppercase;
+	
+}
+.copyright {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #f1f1f1;
+	color: #a3a3a3;
+	text-transform: uppercase;
+	font-weight: lighter;
+	font-size: 10px;
+	letter-spacing: 2px;
+	border-top-width: 2px;
+}
+.footer_banner {
+	background-color: #5F7161;
+	padding-top: 20px;
+	padding-bottom: 20PX;
+	margin-bottom: 0px;
+}
+footer {
+	display: inline-block;
+}
+.hidden {
+	display: none;
+}
+
+/* Mobile -----------------------------------------------------------------------*/
+@media (max-width: 320px) {
+.logo {
+	width: 60%;
+	float:none;
+	margin-top: 50px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+}
+.hero {
+	background-size: cover;
+	background-position:bottom;
+	/*background-attachment: fixed;*/
+	padding-top: 100px;
+	padding-bottom: 40px;
+	height: 150px;
+}
+.container header {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	width: 100%;
+	float: none;
+	overflow: auto;
+	display: inline-block;
+	background: #CC7351;
+}
+#main-menu {
+   display: none;
+}
+#hamburger-menu {
+   display: inline;
+}
+.about {
+	margin-top: 30px;
+}
+.text_column {
+	width: 100%;
+	text-align: justify;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	height: auto;
+}
+.product_carousel {
+	width: 40%;
+	height: auto;
+	margin-bottom: 10px;
+}
+.thumbnail {
+	width: 100%;
+}
+/*Asiakaspalautteiden leveys*/
+.thumbnail_2 {
+	width: 80%;
+	float: left;
+	padding-left: 10%;
+}
+
+.footer_column {
+	width: 100%;
+	margin-top: 0px;
+}
+.banner {
+	background-color: #CC7351;
+	background-image: none;
+}
+.tagline {
+	margin-top: 20px;
+	line-height: 22px;
+}
+.hero_header {
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 22px;
+	text-align: center;
+}
+.blogi_left {
+	display:none;
+}
+.blogi_right {
+	float: left;
+	padding-left: 3%;
+	padding-right: 3%;
+	width: 80%;
+}
+.footer_column {
+    width: 80%;
+	padding-left: 20%;
+    float: left;
+}
+.footer_column_1 {
+    width: 40%;
+	padding-left:20px;
+    float: left;
+}
+.footer_column_2 {
+    width: 70%;
+	padding-right: 40px;
+    float: right;
+	text-align: right;
+}
+}
+
+/* Small Tablets ----------------------------------------------------------------------- */
+@media (min-width: 321px)and (max-width: 767px) {
+.logo {
+	width: 90%;
+	text-align: center;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 20px;
+}
+.container header {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	width: 100%;
+	float: none;
+	overflow: auto;
+	display: inline-block;
+	background: #CC7351;
+}
+#main-menu {
+   display: none;
+}
+#hamburger-menu {
+   display: inline;
+}
+	/*Leipäteksti*/
+.text_column {
+	width: 90%;
+	text-align: left;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 5%;
+	text-align: justify;
+}
+.thumbnail {
+	width: 100%;
+}
+.footer_column {
+	width: 100%;
+	margin-top: 0px;
+}
+
+/*Yläosan kuvat ja tekstit*/
+.row {
+	padding-left: 10%;
+}
+.columns {
+	width: 30%;
+	line-height: 15px;
+    font-size: 12px;
+	text-align: center;
+	margin-bottom: -15px;
+}
+.footer_column {
+	width: 100%;
+}
+/*Suosikit*/
+.product_carousel {
+	width: 20%;
+	margin-left: 10px;
+}
+/*Blogiosuudet*/
+.blogi_left {
+	display:none;
+}
+.blogi_right {
+	padding-left: 3%;
+	padding-right: 3%;
+	width: 80%;
+}
+.footer_column {
+    width: 30%;
+	padding-left: 70px;
+    float: left;
+}
+.footer_column_1 {
+    display:none;
+}
+.footer_column_2 {
+    width: 40%;
+    float: right;
+	padding-right: 40px;
+	text-align: center;
+}
+}
+
+/* Small Desktops ----------------------------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 1096px) {
+.logo {
+	width: 30%;
+	margin-left: 40px;
+	margin-top: 40px;
+	}
+#main-menu {
+   display: none;
+}
+#hamburger-menu {
+   display: inline;
+}
+.text_column {
+	width: 100%;
+}
+.thumbnail {
+	width: 100%;
+}
+/*Yläosan kuvat ja tekstit*/
+.columns {
+	width: 30%;
+	line-height: 18px;
+}
+.text_column {
+	width: 80%;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+/*Blogiosuudet*/
+.blogi_left {
+	width: 25%;
+	float: left;
+	padding-left: 5%;
+	padding-top:3%;
+	text-align: center;
+}
+.blogi_right {
+	padding-left: 60px;
+	padding-top: 0px;
+	padding-right: 5px;
+	width: 60%;
+}
+/*Footer*/
+.footer_column {
+    width: 15%;
+	padding-left: 40px;
+    float: left;
+}
+.footer_column_1 {
+    width: 20%;
+    float: left;
+}
+.footer_column_2 {
+    width: 20%;
+	padding-right: 40px;
+    float: right;
+	text-align: right;
+}
+}
