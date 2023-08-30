@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Harrjoitustyö 4, lomake</title>
+<style type="text/css">
+
+    body {
+        font-size: 11px;
+      font-family: Helvetica, Arial, "sans-serif";
+      color: #393939;
+      background-color: #5B9A8B;
+    }
+
+    .sisalto {
+	width: 80%;
+    margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+    padding: 7%;
+    background-color:#f1f1f1;
+    overflow: auto;
+}
+
+.osio {
+    float:left;
+    width: 45%;
+    padding:2%;
+}
+
+input {
+    width: 90%;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #5B9A8B;
+    border-radius: 5px;
+    overflow: scroll;
+    padding: 5px 10px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 1px solid #5B9A8B;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  resize: none;
+  overflow: scroll;
+}
+
+select {
+    margin-top: 5px;
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #5B9A8B;
+}
+
+input[type="radio"] {
+    margin-left: 20px;
+    width: fit-content;
+    height: 13px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    margin-left: 20px;
+    width: fit-content;
+    height: 13px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align:center;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 2;
+    color: #5B9A8B;
+  }
+
+  h3 {
+    margin-top: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #5B9A8B;
+  }
+
+</style>
+</head>
+<body>
+    <div class="sisalto">
+<h1 id="welcome">Asiakastietolomake</h1>
+<p>Tervetuloa Lemmikkihoitola Vierasmajaan.</p>
+<p>Täytäthän alla olevat tiedot huolellisesti ennen saapumista.</p>
+<!--tekstiruutu-->
+<h2>omistajan tiedot</h2>
+<form>
+    <div class="clearfix">
+    <div class="osio">
+    <label for="fname">Omistajan nimi:</label><br>
+    <input type="text" id="omistajan_nimi" name="omistajan_nimi"><br>
+    <label for="lname">Osoite:</label><br>
+    <input type="text" id="osoite" name="osoite"><br></div>
+    <div class="osio">
+    <label for="lname">Puhelinnumero:</label><br>
+    <input type="number" id="puhelinnumero" name="puhelinnumero"><br>
+    <label for="lname">Sähköposti:</label><br>
+    <input type="email" id="sahkoposti" name="sahkoposti"></div>
+</div>
+
+<h2>Lemmikin tiedot</h2>
+<label for="lname">Kutsumanimi:</label><br>
+<input type="text" id="lemmikin_nimi" name="lemmikin_nimi"><br>
+<label for="lname">Ikä:</label><br>
+<input type="text" id="lemmikin_ika" name="lemmikin_ika">
+
+<!--valinta laatikosta-->
+<p>
+<label for="laji">Valitse lemmikkisi laji:</label>
+<select id="laji" name="laji">
+  <option value="koira">koira</option>
+  <option value="kissa">kissa</option>
+  <option value="kani">kani, marsu tmv.</option>
+  <option value="muu">jokin muu (täytä alle)</option>
+</select>
+</p>
+<p>
+
+<label for="lname">Tarkempi kuvaus lajista:</label><br>
+<input type="text" id="lajin_lisakuvaus" name="lajin_lisakuvaus" placeholder="esim. rotu tai lajikuvaus">
+</p>
+
+<p>
+    <!--valinta-nappi-->
+    <h3>Valitse lemmikin sukupuoli:</h3>
+    <div class="clearfix">
+  <div class="osio">
+    <input type="radio" id="uros" name="lemmikin_sukupuoli" value="uros">
+  <label for="uros">uros</label><br>
+  <input type="radio" id="naaras" name="lemmikin_sukupuoli" value="naaras">
+  <label for="naaras">naaras</label>
+</div>
+  <div class="osio">
+  <input type="radio" id="leikattu_uros" name="lemmikin_sukupuoli" value="leikattu_uros">
+  <label for="leikattu_uros">leikattu uros</label><br>
+  <input type="radio" id="leikattu_naaras" name="lemmikin_sukupuoli" value="leikattu_naaras">
+  <label for="leikattu_naaras">leikattu naaras</label>
+</div>
+</div>
+</p>
+<!--päivämäärät-->
+<h3>Ilmoita hoito-ajat:</h3>
+<div class="clearfix">
+    <div class="osio">
+<label for="saapumispaiva">Saapumispäivä:</label>
+  <input type="date" id="saapumispaiva" name="saapumispaiva"></div>
+  <div class="osio">
+  <label for="lahtopaiva">Lähtöpäivä:</label>
+  <input type="date" id="lahtopaiva" name="lahtopaiva"></div>
+  </div>
+<!--tekstilaatikko-->
+<h3>Muut huomiot lemmikistä:</h3>
+<p>Esim. pelkotilat tai erityishuomiot, saapuuko kaverin kanssa, sosiaalisuus</p>
+<textarea name="message" rows="10" cols="30">
+</textarea>
+    <!--tekstilaatikko-->
+    <p><br>Mikäli lemmikillä on sairaus ja/tai lääkitys, ilmoita se tässä:</p>
+<textarea name="message" rows="10" cols="30">
+    </textarea>
+<!--monivalinta-->
+<h3>Lisäpalvelut (kts. erillinen hinnasto):</h3>
+    <input type="checkbox" id="lisapalvelu1" name="lisapalvelu1" value="">
+    <label for="lisapalvelu1">koiran juoksu- tai pyörälenkki</label><br>
+    <input type="checkbox" id="lisapalvelu1" name="lisapalvelu1" value="">
+    <label for="lisapalvelu1">kissan ulkoilutus valjaissa tai häkissä</label><br>
+    <input type="checkbox" id="lisapalvelu1" name="lisapalvelu1" value="">
+    <label for="lisapalvelu1">turkinhuolto, kynsienleikkuu</label><br>
+    <input type="checkbox" id="lisapalvelu1" name="lisapalvelu1" value="">
+    <label for="lisapalvelu1">kuljetus/nouto 50 km säteellä</label><br>
+  <!--nappi-->
+  <p>
+    <div class="osio">
+<input type="submit" value="Lähetä lomake"></div>
+<div class="osio">
+<input type="reset"></div></p>
+  </form></div>
+</body>
+</html>
