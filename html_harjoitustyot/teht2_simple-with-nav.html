@@ -13,21 +13,35 @@
       text-align: justify;
       height:100%;
       background-color: #F6BA6F;
+      margin: 0;
 	}
   
 	.container {
 	width: 80%;
-      margin-top: -10px;
+  min-height: 100vh;
 	margin-left: auto;
 	margin-right: auto;
+  background-color: #FFFAF4;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
   
+  .tekstilaatikko {
+  height:100%;
+	margin-left: auto;
+	margin-right: auto;
+  padding-top:60px;
+  }
+  
   nav {
-	float:left;
 	width: 100%;
-    height: 8%;
-    padding-top: 10px;
-    background-color: #6DA9E4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  margin-top: -10px;
+  background-color: #6DA9E4;
 }
 nav ul li {
 	float: left;
@@ -37,6 +51,7 @@ nav ul li {
 	letter-spacing: 2px;
   list-style: none;
 	text-transform: uppercase;
+  font-weight: lighter;
 	transition: all 0.3s linear;
 }
 ul li a {
@@ -46,14 +61,6 @@ ul li a {
 ul li:hover a {
 	color: #DF7861;
 }
-  
-  .tekstilaatikko {
-    height:100%;
-	margin-left: auto;
-	margin-right: auto;
-    padding-top:60px;
-    background-color: #FFFAF4;
-  }
 	header {
 		text-align: center;
 		background-color:#FFF8ED;
@@ -96,10 +103,10 @@ ul li:hover a {
 @media (max-width: 600px) {
   .container {
     width: 90%;
+    height: 100%;
   }
   .tekstilaatikko {
     height: 100%;
-    overflow: auto;
   }
   .info {
     padding-top: 130px;
