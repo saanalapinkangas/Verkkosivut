@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Harrjoitustyö 4, lomake</title>
+<title>Harjoitustyö 4, lomake</title>
 <style type="text/css">
 
     body {
-        font-size: 11px;
+        font-size: 12px;
       font-family: Helvetica, Arial, "sans-serif";
       color: #393939;
       background-color: #5B9A8B;
@@ -25,17 +25,18 @@
     float:left;
     width: 45%;
     padding:2%;
+    justify-content: center;
 }
 
 input {
-    width: 90%;
-    height: 20px;
+    width: 97%;
+    height: 25px;
     margin-top: 5px;
     margin-bottom: 10px;
     border: 1px solid #5B9A8B;
     border-radius: 5px;
-    overflow: scroll;
-    padding: 5px 10px;
+    overflow: scroll, auto;
+    padding: 5px;
 }
 
 .clearfix::after {
@@ -47,13 +48,12 @@ input {
 textarea {
   width: 100%;
   height: 150px;
-  padding: 12px 20px;
+  padding: 15px;
   box-sizing: border-box;
   border: 1px solid #5B9A8B;
   border-radius: 10px;
-  background-color: #f8f8f8;
   resize: none;
-  overflow: scroll;
+  overflow: scroll, auto;
 }
 
 select {
@@ -67,10 +67,11 @@ select {
 
 input[type="radio"] {
     margin-left: 20px;
-    width: fit-content;
-    height: 13px;
-    margin-top: 0px;
+    width: 20px;
+    height: 15px;
     margin-bottom: 10px;
+    border-radius: 50%;
+    box-sizing: border-box;
 }
 
 input[type="checkbox"] {
@@ -79,6 +80,56 @@ input[type="checkbox"] {
     height: 13px;
     margin-top: 0px;
     margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input[type="date"] {
+  height: 35px;
+  box-sizing: border-box;
+}
+
+input[type="reset"] {
+  margin-top: 40px;
+  width: 100%;
+  height: 35px;
+  box-sizing: border-box;
+  overflow: auto;
+  background-color: #5B9A8B;
+  color: #f1f1f1;
+  margin-bottom: 40px;
+}
+
+input[type="reset"]:hover {
+  opacity: 0.8;
+}
+
+input[type="submit"] {
+  margin-top: 40px;
+  width: 100%;
+  height: 35px;
+  box-sizing: border-box;
+  overflow: auto;
+  background-color: #5B9A8B;
+  color: #f1f1f1;
+  margin-bottom: 40px;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  text-align: center;
+  color: #5B9A8B;
+  margin-bottom: 30px;
+}
+
+p.info {
+  text-align: center;
+  font-size: 13px;
 }
 
 h2 {
@@ -93,20 +144,28 @@ h2 {
   }
 
   h3 {
-    margin-top: 20px;
-    font-size: 12px;
+    margin-top: 30px;
+    font-size: 13px;
     text-transform: uppercase;
     font-weight: normal;
     color: #5B9A8B;
+  }
+
+  .alateksti {
+    font-size: 10px;
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 </style>
 </head>
 <body>
     <div class="sisalto">
-<h1 id="welcome">Asiakastietolomake</h1>
-<p>Tervetuloa Lemmikkihoitola Vierasmajaan.</p>
-<p>Täytäthän alla olevat tiedot huolellisesti ennen saapumista.</p>
+<h1>Asiakastietolomake</h1>
+<p class="info">Tervetuloa Lemmikkihoitola Vierasmajaan.</p>
+<p class="info">Täytäthän alla olevat tiedot huolellisesti ennen saapumista.<br>Saat lisätietoja lomakkeen täytöstä puhelinnumerosta 0401234567 tai sähköpostitse info@vierasmaja.net.</p>
 <!--tekstiruutu-->
 <h2>omistajan tiedot</h2>
 <form>
@@ -176,12 +235,11 @@ h2 {
 <!--tekstilaatikko-->
 <h3>Muut huomiot lemmikistä:</h3>
 <p>Esim. pelkotilat tai erityishuomiot, saapuuko kaverin kanssa, sosiaalisuus</p>
-<textarea name="message" rows="10" cols="30">
+<textarea>
 </textarea>
     <!--tekstilaatikko-->
     <p><br>Mikäli lemmikillä on sairaus ja/tai lääkitys, ilmoita se tässä:</p>
-<textarea name="message" rows="10" cols="30">
-    </textarea>
+<textarea></textarea>
 <!--monivalinta-->
 <h3>Lisäpalvelut (kts. erillinen hinnasto):</h3>
     <input type="checkbox" id="lisapalvelu1" name="lisapalvelu1" value="">
@@ -193,11 +251,13 @@ h2 {
     <input type="checkbox" id="lisapalvelu1" name="lisapalvelu1" value="">
     <label for="lisapalvelu1">kuljetus/nouto 50 km säteellä</label><br>
   <!--nappi-->
-  <p>
+  
     <div class="osio">
 <input type="submit" value="Lähetä lomake"></div>
 <div class="osio">
-<input type="reset"></div></p>
-  </form></div>
+<input type="reset"></div>
+<div class="alateksti">Lomakkeella lähetetyt tiedot kerätään turvallisesti ja niitä käsitellään luottamuksellisesti vain tarkoitukseen, johon ne on koottu. Tietojasi ei jaeta kolmansille osapuolille ilman suostumustasi.</div>
+  </form>
+  </div>
 </body>
 </html>
