@@ -1,1 +1,366 @@
+<!doctype html>
+<html>
 
+<head>
+    <meta charset="UTF-8">
+    <title>HTML-harjoitus 5</title>
+    <style type="text/css">
+        body {
+            background-color: #fafafa;
+            margin: 0;
+            overflow-x: hidden;
+            font-size: 14px;
+            color: grey;
+            letter-spacing: 0.8;
+            text-align: justify;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        /* navigaatiopalkki */
+
+        .navigaatiopalkki {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 10%;
+            width: 100%;
+            background-color: #333;
+            align-items: center;
+            color: #fff;
+            padding: 10px;
+            opacity: 0.95;
+        }
+
+        .nav_vasen {
+            float: left;
+            height: 100%;
+            margin-left: 5vw;
+        }
+
+        .nav_oikea {
+            float: right;
+            margin-top: 2%;
+            margin-right: 15vw;
+        }
+
+        .navigaatiopalkki img {
+            max-width: fit-content;
+            height: 100%;
+        }
+
+        .navigaatiopalkki a {
+            margin-left: 10px;
+            margin-right: 10px;
+            color: #E2C799;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: lighter;
+            font-size: 14px;
+        }
+
+        .navigaatiopalkki :hover {
+            color: white;
+        }
+
+        /* tekstisisällöt etusivu */
+        .sisalto {
+            margin-top: 40px;
+            width: 60%;
+            padding: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* flexien asemoinnit */
+
+
+
+        /* bannerikuva etusivu */
+
+        .bannerikuva2 {
+            width: 100%;
+            height: 60vh;
+            background-image: url(https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/puppypixels_info.jpg);
+            background-position: right bottom;
+            background-size: cover;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bannerikuva2 section {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            font-style: italic;
+            font-weight: lighter;
+            font-size: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .bannerikuva2 h1 {
+            text-align: center;
+            color: white;
+            font-style: italic;
+            font-weight: lighter;
+            font-size: 40px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .bannerikuva2 h2 {
+            text-align: center;
+            color: white;
+            font-weight: lighter;
+            font-style: normal;
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-transform: uppercase;
+        }
+
+        /* tekstien muotoilut */
+
+        h1 {
+            width: 100%;
+            color: #C08261;
+            font-weight: lighter;
+            font-style: italic;
+            font-size: 22px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding-bottom: 20px;
+        }
+
+        h2 {
+            color: #cb809c;
+            font-weight: lighter;
+            font-style: italic;
+            font-size: 18px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding-left: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        /* kolmen kuvan rivi */
+
+        .keskitys {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .korostettu_tekstiosuus {
+            display: flex;
+            align-items: center;
+            justify-self: center;
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .left {
+            float: left;
+            width: 30%;
+        }
+
+        .right {
+            float: right;
+            width: 70%;
+            margin: 20px;
+
+        }
+
+        .comeasyouare {
+            width: 90%;
+            height: fit-content;
+            border-radius: 20px;
+            overflow: hidden;
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            background: url("https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/comeasyouare.jpg");
+            background-position: right bottom;
+            background-size: cover;
+        }
+
+        .comeasyouare p {
+            width: 60%;
+            color: black;
+            padding-left: 20px;
+        }
+
+        .kuva_owner {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .kuva img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .kuva-teksti {
+            position: absolute;
+            height: 20px;
+            bottom: 20px;
+            right: 0;
+            left: 0;
+            padding: 10px;
+            border-radius: 0;
+            text-align: center;
+            font-weight: lighter;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        .kuva-teksti a {
+            color: #fff;
+            text-decoration: none;
+            letter-spacing: 0.2;
+        }
+
+        .kuva-teksti:hover {
+            transition: opacity 0.3s;
+            background-color: rgba(203, 128, 156, 0.7);
+        }
+
+        /* footer */
+
+        .footer {
+            margin-bottom: 0;
+            margin-left: auto;
+            margin-right: auto;
+            height: 30%;
+            width: 100%;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            padding-left: 15%;
+            padding-top: 20px;
+            padding-bottom: 30px;
+        }
+
+        .footer p {
+            color: #E2C799;
+            font-size: 12px;
+        }
+
+
+        @media (max-width: 600px) {
+
+            .korostettu_tekstiosuus {
+                display: grid;
+            }
+
+            .left {
+                float: left;
+                width: 80%;
+            }
+
+            .right {
+                width: 80%;
+            }
+
+            .nav_oikea {
+                margin-top: 4%;
+                margin-right: 5vw;
+            }
+
+            .navigaatiopalkki a {
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
+    </style>
+
+<body>
+    <div class="navigaatiopalkki">
+        <!-- navigaatio -->
+        <div class="nav_vasen">
+            <img
+                src="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/logo_puppypixels.png">
+        </div>
+        <div class="nav_oikea">
+            <a href="https://saanalapinkangas.github.io/web/puppy_pixels/index.html">front page</a>
+            <a href="https://saanalapinkangas.github.io/web/puppy_pixels/info.html">info</a>
+            <a href="https://saanalapinkangas.github.io/web/puppy_pixels/portfolio.html">portfolio</a>
+            <a href="https://saanalapinkangas.github.io/web/puppy_pixels/contact.html">contact</a>
+        </div>
+    </div>
+    <div class="bannerikuva2">
+    </div>
+    <div class="sisalto">
+        <!-- sivun sisältö -->
+        <h1>Information</h1>
+        <p>At Puppy Pixels, we have a deep appreciation for the unique bond between pets and their owners. Our passion
+            is to capture the heartwarming moments, playful antics, and irresistible charm of your beloved pets through
+            the art of photography.</p>
+
+        <p>With years of experience in pet photography, our dedicated team understands the nuances of working with
+            animals, ensuring a comfortable and enjoyable experience for both pets and their owners. We believe that
+            every pet has a story to tell, and our mission is to narrate those stories through captivating and timeless
+            images.</p>
+
+        <p>Whether it's the gleam in your dog's eye during a game of fetch, the tenderness of a cat's purr, or the
+            curiosity of a bunny exploring its surroundings, we aim to freeze these precious moments in time. Our
+            photographers are not just skilled professionals but also pet lovers who connect with your furry family
+            members to bring out their unique personalities.</p>
+
+        <p>Your pet is an essential part of your life, and we strive to provide you with photographs that you will
+            cherish forever. From playful portraits to heartwarming candid shots, we specialize in creating a visual
+            legacy of your pets that will warm your heart every time you look at them.</p>
+
+        <p>Explore our portfolio and discover the magic that happens when pets and photography come together. Contact us
+            today to schedule a session, and let us capture the joy, love, and companionship that your pets bring into
+            your life.</p>
+            <div class="comeasyouare">
+                <h2>Come as you are - both of you!</h2>
+                <p>We believe in celebrating your dog just as they are. No fancy tricks or special training required.
+                    We're here to capture the authentic and unique essence of your furry companion, whether they're
+                    goofy, playful, or simply being themselves. Our goal is to showcase the natural charm and
+                    personality of your dog, because every moment with them is picture-perfect. So, let your dog come as
+                    they are, and let us do the rest to create timeless memories you'll cherish forever.</p>
+            </div>
+        
+
+
+        <div class="korostettu_tekstiosuus">
+        <div class="left"><img class="kuva_owner"
+                src="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/owner.jpg"></div>
+        <div class="right">
+            <h1>About me</h1>
+            <p>Hello, I'm Nella, a passionate pet photographer with a love for capturing the beauty and
+                charm of our four-legged friends. My journey into the world of pet photography started with a profound
+                appreciation for the unique bond we share with our canine companions.</p>
+
+            <p>As a devoted owner of a beloved Samoyed, I understand the joy and love that dogs bring into our lives.
+                This connection has inspired me to specialize in photographing dogs, aiming to freeze the precious
+                moments, delightful expressions, and playful antics that make our furry friends so endearing.</p>
+
+            <p>My photography style is all about authenticity. I believe that dogs should come as they are, without the
+                need for special tricks or extensive training. Each dog has a distinct personality, and my goal is to
+                capture their true essence in every frame. Whether it's a joyful romp in the park, a contemplative
+                moment by the window, or the simple pleasure of a wagging tail, I'm dedicated to preserving these
+                heartfelt memories.</p>
+        </div></div>
+        
+    </div>
+
+    <div class="footer">
+        <div class="left">
+            <p>Puppy Pixels</p>
+            <p>Wales, United Kingdom</p>
+            <p>tel. 040 123 4567</p>
+            <p>hello@puppypixels.com</p>
+        </div>
+        <div class="right"></div>
+    </div>
+
+</body>
+</head>
+
+</html>
