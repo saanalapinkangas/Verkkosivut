@@ -71,6 +71,8 @@
             margin-right: auto;
         }
 
+        /* flexien asemoinnit */
+
 
 
         /* bannerikuva etusivu */
@@ -140,36 +142,42 @@
         }
 
 
-        /* galleria */
+        /* galleria 2*/
 
         .grid-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+            display: flex;
+            align-items: top;
+            justify-content: center;
+            border-radius: 4px;
+        }
 
-  background-color: #cb809c;
-  border-radius: 4px;
-  transition: transform 0.3s ease-in-out;
+        .palsta1 {
+            float: left;
+            width: 33%;
+            margin: 10px;
+        }
 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            transition: transform 0.3s ease-in-out;
+            margin-bottom: 10px;
+        }
 
-.grid-item:hover {
-  filter: opacity(0.9);
-  transform: scale(1.04);
-}
+        .grid-item img:hover {
+            filter: opacity(0.9);
+        }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-auto-rows: minmax(200px, auto);
-  gap: 20px;
-  padding: 20px;
-  grid-auto-flow: dense;
-}
- 
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-auto-rows: minmax(200px, auto);
+            gap: 20px;
+            padding: 20px;
+            grid-auto-flow: dense;
+        }
+
 
         /* footer */
 
@@ -226,81 +234,94 @@
     <div class="bannerikuva2">
     </div>
 
-    
+
     <div class="sisalto">
         <!-- sivun sisältö -->
         <h1>Portfolio</h1>
 
-        
+
         <!--välijuttu-->
 
-        <div class="grid-container">
-            <div class="grid-item" style="
-                        background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria1.jpg');
-                      "></div>
 
-            <div class="grid-item" style="
-background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria2.jpg');
-"></div>
 
-            <div class="grid-item" style="
-                        background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria3.jpg');
-                      "></div>
+        <div class="grid-item">
+            <div class="palsta1">
+                <a href="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria1.jpg">
+                    <img
+                        src="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria1.jpg">
+                </a>
+                <a href="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria2.jpg">
+                    <img
+                        src="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria2.jpg">
+                </a>
+                <a href="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria8.jpg">
+                    <img
+                        src="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria8.jpg">
+                </a>
+                <a href="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria14.jpg">
+                    <img
+                        src="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria14.jpg">
+                </a>
+                <a href="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria12.jpg">
+                    <img
+                        src="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria12.jpg">
+                </a>
+            </div>
 
-            <div class="grid-item" style="
-background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria4.jpg');
-"></div>
+            <div class="palsta1">
+                <a href="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria3.jpg">
+                    <img
+                        src="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria3.jpg">
+                </a>
+                <a href="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria4.jpg">
+                    <img
+                        src="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria4.jpg">
+                </a>
+                <a href="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria7.jpg">
+                    <img
+                        src="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria7.jpg">
+                </a>
+                <a href="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria13.jpg">
+                    <img
+                        src="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria13.jpg">
+                </a>
+                <a href="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria16.jpg">
+                    <img
+                        src="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria16.jpg">
+                </a>
+                <a href="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria15.jpg">
+                    <img
+                        src="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria15.jpg">
+                </a>
+            </div>
 
-            <div class="grid-item" style="
-                        background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria5.jpg');
-                      "></div>
-
-            <div class="grid-item" style="
-background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria6.jpg');
-"></div>
-
-            <div class="grid-item" style="
-                        background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria7.jpg');
-                      "></div>
-
-            <div class="grid-item" style="
-background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria8.jpg');
-"></div>
-
-            <div class="grid-item" style="
-                        background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria9.jpg');
-                      "></div>
-
-            <div class="grid-item" style="
-background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria10.jpg');
-"></div>
-
-            <div class="grid-item" style="
-                        background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria11.jpg');
-                      "></div>
-
-            <div class="grid-item" style="
-background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria12.jpg');
-"></div>
-
-            <div class="grid-item" style="
-                        background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria13.jpg');
-                      "></div>
-
-            <div class="grid-item" style="
-background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria14.jpg');
-"></div>
-
-            <div class="grid-item" style="
-                        background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria15.jpg');
-                      "></div>
-
-            <div class="grid-item" style="
-background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria16.jpg');
-"></div>
+            <div class="palsta1">
+                <a href="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria5.jpg">
+                    <img
+                        src="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria5.jpg">
+                </a>
+                <a href="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria6.jpg">
+                    <img
+                        src="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria6.jpg">
+                </a>
+                <a href="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria9.jpg">
+                    <img
+                        src="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria9.jpg">
+                </a>
+                <a href="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria10.jpg">
+                    <img
+                        src="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria10.jpg">
+                </a>
+                <a href="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria11.jpg">
+                    <img
+                        src="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria11.jpg">
+                </a>
+            </div>
         </div>
 
         
+
+
     </div>
 
     <div class="footer">
