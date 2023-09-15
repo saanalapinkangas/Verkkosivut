@@ -1,1 +1,319 @@
+<!doctype html>
+<html>
 
+<head>
+    <meta charset="UTF-8">
+    <title>HTML-harjoitus 5</title>
+    <style type="text/css">
+        body {
+            background-color: #fafafa;
+            margin: 0;
+            overflow-x: hidden;
+            font-size: 14px;
+            color: grey;
+            letter-spacing: 0.8;
+            text-align: justify;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        /* navigaatiopalkki */
+
+        .navigaatiopalkki {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 10%;
+            width: 100%;
+            background-color: #333;
+            align-items: center;
+            color: #fff;
+            padding: 10px;
+            opacity: 0.95;
+        }
+
+        .nav_vasen {
+            float: left;
+            height: 100%;
+            margin-left: 5vw;
+        }
+
+        .nav_oikea {
+            float: right;
+            margin-top: 2%;
+            margin-right: 15vw;
+        }
+
+        .navigaatiopalkki img {
+            max-width: fit-content;
+            height: 100%;
+        }
+
+        .navigaatiopalkki a {
+            margin-left: 10px;
+            margin-right: 10px;
+            color: #E2C799;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: lighter;
+            font-size: 14px;
+        }
+
+        .navigaatiopalkki :hover {
+            color: white;
+        }
+
+        /* tekstisisällöt etusivu */
+        .sisalto {
+            margin-top: 40px;
+            width: 60%;
+            padding: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+
+        /* bannerikuva etusivu */
+
+        .bannerikuva2 {
+            width: 100%;
+            height: 60vh;
+            background-image: url(https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/puppypixels_info.jpg);
+            background-position: right bottom;
+            background-size: cover;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bannerikuva2 section {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            font-style: italic;
+            font-weight: lighter;
+            font-size: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .bannerikuva2 h1 {
+            text-align: center;
+            color: white;
+            font-style: italic;
+            font-weight: lighter;
+            font-size: 40px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .bannerikuva2 h2 {
+            text-align: center;
+            color: white;
+            font-weight: lighter;
+            font-style: normal;
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-transform: uppercase;
+        }
+
+        /* tekstien muotoilut */
+
+        h1 {
+            width: 100%;
+            color: #C08261;
+            font-weight: lighter;
+            font-style: italic;
+            font-size: 22px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding-bottom: 20px;
+        }
+
+        h2 {
+            color: #cb809c;
+            font-weight: lighter;
+            font-style: italic;
+            font-size: 18px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding-left: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+
+        /* galleria */
+
+        .grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #cb809c;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.grid-item:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+ 
+
+        /* footer */
+
+        .footer {
+            margin-bottom: 0;
+            margin-left: auto;
+            margin-right: auto;
+            height: 30%;
+            width: 100%;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            padding-left: 15%;
+            padding-top: 20px;
+            padding-bottom: 30px;
+        }
+
+        .footer p {
+            color: #E2C799;
+            font-size: 12px;
+        }
+
+
+        @media (max-width: 600px) {
+
+            .nav_oikea {
+                margin-top: 4%;
+                margin-right: 5vw;
+            }
+
+            .navigaatiopalkki a {
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
+    </style>
+
+<body>
+    <div class="navigaatiopalkki">
+        <!-- navigaatio -->
+        <div class="nav_vasen">
+            <img
+                src="https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/logo_puppypixels.png">
+        </div>
+        <div class="nav_oikea">
+            <a href="https://saanalapinkangas.github.io/web/puppy_pixels/index.html">front page</a>
+            <a href="https://saanalapinkangas.github.io/web/puppy_pixels/info.html">info</a>
+            <a href="https://saanalapinkangas.github.io/web/puppy_pixels/portfolio.html">portfolio</a>
+            <a href="https://saanalapinkangas.github.io/web/puppy_pixels/contact.html">contact</a>
+        </div>
+    </div>
+    <div class="bannerikuva2">
+    </div>
+
+    
+    <div class="sisalto">
+        <!-- sivun sisältö -->
+        <h1>Portfolio</h1>
+
+        
+        <!--välijuttu-->
+
+        <div class="grid-container">
+            <div class="grid-item" style="
+                        background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria1.jpg');
+                      "></div>
+
+            <div class="grid-item" style="
+background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria2.jpg');
+"></div>
+
+            <div class="grid-item" style="
+                        background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria3.jpg');
+                      "></div>
+
+            <div class="grid-item" style="
+background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria4.jpg');
+"></div>
+
+            <div class="grid-item" style="
+                        background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria5.jpg');
+                      "></div>
+
+            <div class="grid-item" style="
+background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria6.jpg');
+"></div>
+
+            <div class="grid-item" style="
+                        background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria7.jpg');
+                      "></div>
+
+            <div class="grid-item" style="
+background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria8.jpg');
+"></div>
+
+            <div class="grid-item" style="
+                        background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria9.jpg');
+                      "></div>
+
+            <div class="grid-item" style="
+background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria10.jpg');
+"></div>
+
+            <div class="grid-item" style="
+                        background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria11.jpg');
+                      "></div>
+
+            <div class="grid-item" style="
+background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria12.jpg');
+"></div>
+
+            <div class="grid-item" style="
+                        background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria13.jpg');
+                      "></div>
+
+            <div class="grid-item" style="
+background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria14.jpg');
+"></div>
+
+            <div class="grid-item" style="
+                        background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria15.jpg');
+                      "></div>
+
+            <div class="grid-item" style="
+background-image: url('https://raw.githubusercontent.com/saanalapinkangas/web/main/puppy_pixels/photos/galleria16.jpg');
+"></div>
+        </div>
+
+        
+    </div>
+
+    <div class="footer">
+        <div class="left">
+            <p>Puppy Pixels</p>
+            <p>Wales, United Kingdom</p>
+            <p>tel. 040 123 4567</p>
+            <p>hello@puppypixels.com</p>
+        </div>
+        <div class="right"></div>
+    </div>
+
+</body>
+</head>
+
+</html>
