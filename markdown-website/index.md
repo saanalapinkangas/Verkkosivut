@@ -43,7 +43,7 @@ Australianpaimenkoira on tarkkaavainen, eläväinen ja nopeasti oppiva koira, jo
 | :---: | :---: |
 | <picture><img src="https://www.sidewalkdog.com/wp-content/uploads/2023/06/maud-slaats-F6fM4Yay0mY-unsplash-scaled.jpg" width="300px"></picture> | <picture><img src="https://i.pinimg.com/originals/64/ed/5c/64ed5c490580d9dbf027dc6645b0318d.jpg" width="300px"></picture> |
 | Red merle valkoisin merkein | Blue merle valkoisin- ja tan-merkein |
-| picture><img src="https://australianshepherds.org/wp-content/uploads/2021/04/red-tri.png" width="300px"></picture> | <picture><img src="https://i.pinimg.com/736x/55/bd/92/55bd92c34cc58fbd90dc04cde7366f1c.jpg" width="300px"></picture> |
+| <picture><img src="https://australianshepherds.org/wp-content/uploads/2021/04/red-tri.png" width="300px"></picture> | <picture><img src="https://i.pinimg.com/736x/55/bd/92/55bd92c34cc58fbd90dc04cde7366f1c.jpg" width="300px"></picture> |
 | Punainen valkoisin- ja tan-merkein | Musta valkoisin- ja tan-merkein (tricolor) |
 
 
