@@ -66,7 +66,7 @@ Koirien terveyden ylläpito on keskeistä niiden pitkän ja onnellisen elämän 
 
 - **Eläinlääkärin tarkastus:** Käy säännöllisesti eläinlääkärissä terveystarkastuksessa.
 
-![Koira](https://via.placeholder.com/350x250)
+![Koira]([https://via.placeholder.com/350x250](https://www.sidewalkdog.com/wp-content/uploads/2023/06/maud-slaats-F6fM4Yay0mY-unsplash-scaled.jpg))
 
 Koirat ovat uskomattomia olentoja, ja niiden seura tuo iloa ja onnea monille ihmisille ympäri maailman. Muista pitää huolta karvaisesta ystävästäsi ja nauti yhteisestä ajasta koirasi kanssa!
 
