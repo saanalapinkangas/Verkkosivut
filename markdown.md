@@ -25,6 +25,7 @@ Tämä on **esimerkki** *Markdownista*.
 [Markdown-ohjeet Githubissa](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 ![värikuvaus](https://www.australianpaimenkoirat.fi/images/Laurankuvat/dante_seisoo2.jpeg)
+<picture><img src="https://www.sidewalkdog.com/wp-content/uploads/2023/06/maud-slaats-F6fM4Yay0mY-unsplash-scaled.jpg"></picture>
 
 
 # Koirat: Ihmisen parhaat ystävät
