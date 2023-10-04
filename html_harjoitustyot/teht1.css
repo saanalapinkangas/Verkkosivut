@@ -1,0 +1,78 @@
+body {
+	  font-size: 12px;
+    color: #393939;
+    font-family: Helvetica, Arial, "sans-serif";
+    letter-spacing: 0.8;
+    text-align: justify;
+    height:100%;
+    background-color: #F6BA6F;
+    margin: 0;
+	}
+  
+	.container {
+	width: 80%;
+  min-height: 100vh;
+	margin-left: auto;
+	margin-right: auto;
+  background-color: #FFFAF4;
+  display: flex;
+  flex-direction: column;
+}
+  
+  .tekstilaatikko {
+  height:100%;
+	margin-left: auto;
+	margin-right: auto;
+  padding-top:60px;
+  flex: 1;
+  }
+	.header {
+		text-align: center;
+		height:30px;
+		text-transform: uppercase;
+    padding-top: 40px;
+		font-size: 24px;
+		color: #468B97;
+    letter-spacing: 2px;
+    font-weight: lighter;
+	}
+	.txt {
+	  float: left;
+    width: 83%;
+    padding-left:10%;
+    padding-right:10%;
+    line-height: 1.2;
+	}
+	
+	h2 {
+		font-size: 15px;
+		text-transform: uppercase;
+		color: #FF9256;
+    letter-spacing: 2px;
+    font-weight: lighter;
+	}
+  	.info {
+  	text-align: center;
+		height:60px;
+    padding-top: 50px;
+		font-size: 11px;
+		text-transform: uppercase;
+		color: #6DA9E4;
+    letter-spacing: 1px;
+    font-weight: lighter;
+	}
+	
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    height: 100%;
+  }
+  .tekstilaatikko {
+    height: 100%;
+  }
+  .info {
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right:10px;
+  }
+  }
