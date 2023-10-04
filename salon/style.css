@@ -1,1 +1,205 @@
+body {
+            font-size: 12px;
+            color: #393939;
+            font-family: Helvetica, Arial, "sans-serif";
+            letter-spacing: 0.8;
+            text-align: justify;
+            height: 100%;
+            margin: 0;
+        }
 
+        .aloitus {
+            background: url("https://raw.githubusercontent.com/saanalapinkangas/web/main/salon/photos/taustakuva_salon.png");
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right top;
+        }
+
+        .logo {
+            margin: 0;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logokuva {
+            width: 30%;
+        }
+
+        .button_sisalto {
+            width: 70%;
+            display: flex;
+            margin: 0 auto;
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
+        .button_etusivu {
+            background-color: #3f6970;
+            border: 0px #ffffff solid;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: lighter;
+            width: 250px;
+            height: 50px;
+            border-radius: 4px;
+            opacity: 0.9;
+            margin-bottom: 10px;
+            color: #ffffff;
+            transition: background-color 0.3s;
+        }
+
+        .button_etusivu:hover {
+            background-color: #c6ad28;
+            opacity: 0.8;
+            border: 0px;
+        }
+
+        .button_etusivu a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .sosmedia_sisalto {
+            width: 15%;
+            display: flex;
+            margin: 0 auto;
+            padding-top: 30px;
+            justify-content: space-between;
+        }
+
+        .sosiaalinenmedia {
+            width: 35px;
+            height: 35px;
+            display: flex;
+        }
+
+        .sosiaalinenmedia:hover {
+            opacity: 0.6;
+        }
+
+        .display_flex {
+            display: flex;
+        }
+
+        .etusivu {
+            background: url("https://raw.githubusercontent.com/saanalapinkangas/web/main/salon/photos/kampaamotausta1.jpg");
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right top;
+        }
+
+        .etusivu_txt {
+            float:left;
+            margin: 10%;
+            width: 50%;
+        }
+
+        .etusivu_img {
+            float:right;
+            margin-top: 0;
+            margin-right: 5%;
+            width: 40%;
+        }
+
+        .etusivu_img img {
+            border-radius: 0 0 30% 30%;
+            width: 70%;
+        }
+
+        .etusivu_txt p {
+            font-size: 14px;
+        }
+
+        .etusivu_txt h1 {
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-weight: lighter;
+            text-align: center;
+            margin-bottom: 40px;
+            margin-top: -40px;
+        }
+
+        .etusivu_txt h2 {
+            color: #99a799;
+            font-size: 15px;
+            text-transform: uppercase;
+            font-weight: normal;
+            text-align: center;
+            margin-top: 90px;
+        }
+
+        .button_sisalto2 {
+            width: 100%;
+            display: flex;
+            margin: 0 auto;
+            justify-content: space-between;
+            flex-direction: row;
+            margin-top: 10%;
+        }
+
+        .button_pinkki {
+            background-color: #cfb0b7;
+            border: 0px #ffffff solid;
+            font-size: 12px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: lighter;
+            width: 250px;
+            height: 50px;
+            border-radius: 30px;
+            color: #ffffff;
+            transition: background-color 0.3s;
+        }
+
+        .button_pinkki a{
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .button_pinkki:hover {
+            background-color: #c6ad28;
+            opacity: 0.8;
+            border: 0px;
+        }
+
+        @media (max-width: 600px) {
+
+            .logo {
+                height: 50vh;
+            }
+            .logokuva {
+                width: 45%;
+            }
+            .button_sisalto {
+                flex-direction: column;
+                align-items: center;
+                margin: 8px auto;
+            }
+
+            .sosmedia_sisalto {
+            width: 30%;
+            padding-top: 10px;
+            justify-content: space-between;
+        }
+
+        .button_sisalto2 {
+            flex-direction: column;
+            align-items: center;
+            margin: 8px auto;
+        }
+
+        .etusivu_txt {
+            width: 90%;
+            margin-top: 12%;
+        }
+
+        .etusivu_img {
+            width: 0%;
+            visibility: hidden;
+        }
+        }
